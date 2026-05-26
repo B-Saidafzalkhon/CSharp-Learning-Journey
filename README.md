@@ -54,10 +54,10 @@ understand them.
 
 ## 🗣️ Languages
 
-- 🇬🇧 English — technical reading
-- 🇩🇪 German — actively learning (target: B2 for Ausbildung)
-- 🇷🇺 Russian — fluet
-- 🇹🇯 Tajik — native
+- 🇹🇯 Tajik — Native 
+- 🇷🇺 Russian — Fluent
+- 🇬🇧 English — B2 
+- 🇩🇪 German — Actively learning (target: B2 for Ausbildung)
 
 ## 📝 Notes language
 
