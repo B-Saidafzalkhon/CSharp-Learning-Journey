@@ -61,7 +61,7 @@ understand them.
 
 ## 📝 Notes language
 
-Notes in early phases are written in Russian (my fluet language) to
+Notes in early phases are written in Russian (my fluent language) to
 maximize comprehension. The plan is to gradually shift to English
 starting around Phase 2, as my technical English matures.
 
