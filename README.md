@@ -1,6 +1,6 @@
 # C# / ASP.NET Learning Journey
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
-![Phase](https://img.shields.io/badge/Current_Phase-0_Foundations-blue)
+![Phase](https://img.shields.io/badge/Current_Phase-1_Csharp_Basics-blue)
 ![Language](https://img.shields.io/badge/Language-Russian_%E2%86%92_English-green)
 
 My structured path from absolute beginner to backend developer.
@@ -20,6 +20,7 @@ understand them.
   - [x] Algorithmic thinking
   - [x] PowerShell basics
 - [ ] Phase 1 — C# fundamentals
+  - [x] First C# program
 - [ ] Phase 2 — Object-Oriented Programming
 - [ ] Phase 3 — Advanced C#
 - [ ] Phase 4 — Tools (Git, debugging, testing)
