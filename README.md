@@ -68,4 +68,4 @@ starting around Phase 2, as my technical English matures.
 
 ---
 
-*Started: 26 May 2026 · Last updated: May 2026*
+*Started: 26 May 2026 · Last updated: 27 May 2026*
