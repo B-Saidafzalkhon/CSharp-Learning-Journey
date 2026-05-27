@@ -9,11 +9,11 @@ internal class Program
 
         if (string.IsNullOrWhiteSpace(name))
         {
-            Console.WriteLine($"Hello stranger! Nice to meet you.");
+            Console.WriteLine($"Hello stranger! Nice to meet you!");
         }
         else
         {
-            Console.WriteLine($"Hello {name}! Nice to meet you.");
+            Console.WriteLine($"Hello {name}! Nice to meet you!");
         }
     }
 }
