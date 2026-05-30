@@ -23,7 +23,7 @@ understand them.
   - [x] First program & syntax breakdown
   - [x] Variables and data types
   - [x] Conditions and branching
-  - [ ] Loops
+  - [x] Loops
   - [ ] Methods
   - [ ] Arrays and collections
   - [ ] Exception handling
