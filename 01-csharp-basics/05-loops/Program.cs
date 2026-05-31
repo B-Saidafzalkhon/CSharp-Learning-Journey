@@ -9,7 +9,7 @@
                 Console.WriteLine("====== Multiplication table ======");
 
                 Console.Write("Enter a number (1-10): ");
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
 
                 if (int.TryParse(input, out int number) && (number <= 10 && number >= 1))
                 {
@@ -35,7 +35,7 @@
                 Console.WriteLine("====== Sum from 1 to N ======");
 
                 Console.Write("Enter N: ");
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
                 int sum = 0;
                 if (int.TryParse(input, out int number) && number > 0)
                 {
@@ -69,7 +69,7 @@
                 {
                     count++;
                     Console.Write("Guess the number: ");
-                    string input = Console.ReadLine();
+                    string? input = Console.ReadLine();
                     if (int.TryParse(input, out int number))
                     {
                         if (number == target)
@@ -107,7 +107,8 @@
                         "3. Exit");
 
                     Console.Write("Choice: ");
-                    string input = Console.ReadLine();
+                    string? input = Console.ReadLine();
+
                     if (int.TryParse(input, out int number))
                     {
                         choice = number;
