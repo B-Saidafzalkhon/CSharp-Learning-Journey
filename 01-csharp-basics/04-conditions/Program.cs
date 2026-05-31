@@ -10,7 +10,7 @@
                 Console.WriteLine("====== Even/odd ======");
 
                 Console.Write("Enter a number: ");
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
 
                 if (int.TryParse(input, out int number))
                 {
@@ -38,7 +38,7 @@
                 Console.WriteLine("====== Score ======");
 
                 Console.Write("Enter score (0-100): ");
-                string input = Console.ReadLine();           
+                string? input = Console.ReadLine();           
 
                 if (int.TryParse(input, out int score))
                 {
@@ -81,7 +81,7 @@
             // Exercise 3
             {
                 Console.Write("Enter day number (1-7): ");
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine();
                 int dayNumber = 0;
 
                 if (int.TryParse(input, out int number))
@@ -113,9 +113,9 @@
             // Exercise 4
             {
                 Console.Write("Username: ");
-                string username = Console.ReadLine();
+                string? username = Console.ReadLine();
                 Console.Write("Password: ");
-                string password = Console.ReadLine();
+                string? password = Console.ReadLine();
 
                 if (string.IsNullOrWhiteSpace(username))
                 {
@@ -139,10 +139,10 @@
             // Exercise 5
             {
                 Console.Write("First number: ");
-                string input1 = Console.ReadLine();
+                string? input1 = Console.ReadLine();
 
                 Console.Write("Second number: ");
-                string input2 = Console.ReadLine();
+                string? input2 = Console.ReadLine();
 
                 decimal firstNumber = 0, secondNumber = 0;
                 if (decimal.TryParse(input1, out decimal number1))
@@ -163,7 +163,7 @@
                     Console.WriteLine("Not a valid number!");
                 }
 
-                string input3 = Console.ReadLine();
+                string? input3 = Console.ReadLine();
                 char operation = ' ';
                 if (char.TryParse(input3, out char op))
                 {
