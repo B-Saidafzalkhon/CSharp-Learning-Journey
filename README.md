@@ -24,7 +24,7 @@ understand them.
   - [x] Variables and data types
   - [x] Conditions and branching
   - [x] Loops
-  - [ ] Methods
+  - [x] Methods
   - [ ] Arrays and collections
   - [ ] Exception handling
 - [ ] Phase 2 — Object-Oriented Programming
@@ -74,4 +74,4 @@ starting around Phase 2, as my technical English matures.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 30 May 2026*
+*Started: 26 May 2026 · Last updated: 1 June 2026*
