@@ -207,7 +207,64 @@
             int choice = ReadInt("Enter choice: ");
             return choice;
         }
+        // ----------------------- Exercise 4 Methods end -----------------------
 
+        // ---------------------- Exercise 5 Methods Start ----------------------
+        static int CountEven(int[] array)
+        {
+            int countEven = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 == 0)
+                    countEven++;
+            }
+            return countEven;
+        }
+        static int CountOdd(int[] array)
+        {
+            int countOdd = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 != 0)
+                    countOdd++;
+            }
+            return countOdd;
+        }
+        static int Mode(int[] array)
+        {
+            int count = 0;
+            int mode = array[0];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                int currentCount = 0;
+                for (int j = 0; j < array.Length; j++)
+                {
+                    if (array[i] == array[j])
+                    {
+                        currentCount++;
+                    }
+                }
+                if (count < currentCount)
+                {
+                    count = currentCount;
+                    mode = array[i];
+                }
+            }
+            return mode;
+        }
+
+        static void PrintFullStatistics(int[] array)
+        {
+            Console.WriteLine($"Sum: {Sum(array)}");
+            Console.WriteLine($"Min: {Min(array)}");
+            Console.WriteLine($"Max: {Max(array)}");
+            Console.WriteLine($"Average: {Average(array):F2}");
+            Console.WriteLine($"Mode: {Mode(array)}");
+            Console.WriteLine($"Even numbers: {CountEven(array)}");
+            Console.WriteLine($"Odd numbers: {CountOdd(array)}");
+        }
+        // ----------------------- Exercise 5 Methods end -----------------------
         static void Main(string[] args)
         {
             // Exercise 1 Array Statistics
@@ -324,6 +381,13 @@
                     if (choice == 4)
                         break;
                 }
+                PauseAndClear();
+            }
+
+            // Exercise 5 Statistics of numbers through many methods
+            {          
+                int[] numbers = ReadArray(10);
+                PrintFullStatistics(numbers);
             }
         }
     }
