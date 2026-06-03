@@ -128,6 +128,40 @@
             };
             return result;
         }
+        // ----------------------- Exercise 1 Methods end -----------------------
+
+        // ---------------------- Exercise 3 Methods Start ----------------------
+        static bool IsPalindrome(string text)
+        {
+            text = text.Trim().ToLower().Replace(" ", "");
+
+            int left = 0;
+            int right = text.Length - 1;
+
+            while (left < right)
+            {
+                if (text[left] != text[right])
+                {
+                    return false;
+                }
+                left += 1;
+                right -= 1;
+            }
+            return true;
+        }
+
+        static string ReadString(string message)
+        {
+            Console.Write(message);
+            while (true)
+            {
+                string? input = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(input))
+                    return input;
+
+                Console.WriteLine("Invalid Input! Try Again!");
+            }
+        }
         static void Main(string[] args)
         {
             // Exercise 1
@@ -151,11 +185,41 @@
                 decimal? result = Calculate(a, b, op);
                 if (result.HasValue)
                 {
-                    Console.WriteLine(result);
+                    Console.WriteLine($"Result: {result}");
                 }
                 else
                 {
                     Console.WriteLine("Cannot compute result.");
+                }
+                PauseAndClear();
+            }
+
+            // Exercise 3
+            {
+                bool isWorking = true;
+                while (isWorking)
+                {
+                    Console.WriteLine("====== Palindrome ======");
+
+                    string input = ReadString("Enter a string (or 'exit'): ");
+                    if (input.Trim().ToLower().Replace(" ", "") == "exit")
+                    {
+                        Console.WriteLine("Goodbye!");
+                        isWorking = false;
+                    }
+                    else
+                    {
+                        bool isPalindrome = IsPalindrome(input);
+                        if (isPalindrome)
+                        {
+                            Console.WriteLine($"'{input}' is Palindrome!");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"'{input}' is not Palindrome!");
+                        }
+                        PauseAndClear();
+                    }
                 }
             }
         }
