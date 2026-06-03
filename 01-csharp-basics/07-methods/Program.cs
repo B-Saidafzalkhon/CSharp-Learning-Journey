@@ -128,7 +128,7 @@
             };
             return result;
         }
-        // ----------------------- Exercise 1 Methods end -----------------------
+        // ----------------------- Exercise 2 Methods end -----------------------
 
         // ---------------------- Exercise 3 Methods Start ----------------------
         static bool IsPalindrome(string text)
@@ -162,9 +162,55 @@
                 Console.WriteLine("Invalid Input! Try Again!");
             }
         }
+        // ----------------------- Exercise 3 Methods end -----------------------
+
+        // ---------------------- Exercise 4 Methods Start ----------------------
+        static double ReadDouble(string message)
+        {
+            Console.Write(message);
+            while (true)
+            {
+                string? input = Console.ReadLine();
+                if (double.TryParse(input, out double value))
+                    return value;
+
+                Console.WriteLine("Invalid input! Try again!");
+            }
+        }
+
+        static double RectangleArea(double width, double height)
+        {
+            double area = width * height;
+            return area;
+        }
+
+        static double CircleArea(double radius)
+        {
+            double area = Math.PI * Math.Pow(radius, 2);
+            return area;
+        }
+
+        static double TriangleArea(double triangleBase, double height)
+        {
+            double area = (triangleBase * height) / 2;
+            return area;
+        }
+
+        static int ShowMenuAndReadChoice()
+        {
+            Console.WriteLine("====== Area calculator ======");
+            Console.WriteLine("1. Rectangle area\n" +
+                "2. Circle area\n" +
+                "3. Triangle area\n" +
+                "4. Exit");
+
+            int choice = ReadInt("Enter choice: ");
+            return choice;
+        }
+
         static void Main(string[] args)
         {
-            // Exercise 1
+            // Exercise 1 Array Statistics
             {
                 Console.WriteLine("====== Array Statistics ======");
 
@@ -175,7 +221,7 @@
                 PauseAndClear();
             }
 
-            // Exercise 2
+            // Exercise 2 Calculator
             {
                 Console.WriteLine("====== Calculator ======");
                 decimal a = ReadDecimal("Enter a: ");
@@ -194,7 +240,7 @@
                 PauseAndClear();
             }
 
-            // Exercise 3
+            // Exercise 3 Palindrome
             {
                 bool isWorking = true;
                 while (isWorking)
@@ -206,6 +252,7 @@
                     {
                         Console.WriteLine("Goodbye!");
                         isWorking = false;
+                        PauseAndClear();
                     }
                     else
                     {
@@ -220,6 +267,62 @@
                         }
                         PauseAndClear();
                     }
+                }
+            }
+
+            // Exercise 4 Area calculator
+            {
+                while (true)
+                {
+                    int choice = ShowMenuAndReadChoice();
+
+                    switch (choice)
+                    {
+                        case 1:
+                            {
+                                double width = ReadDouble("Enter Width: ");
+                                double height = ReadDouble("Enter Height: ");
+
+                                double result = RectangleArea(width, height);
+                                Console.WriteLine($"Rectangle Area: {result}");
+
+                                PauseAndClear();
+                            }
+                            break;
+
+                        case 2:
+                            {
+                                double radius = ReadDouble("Enter Radius: ");
+
+                                double result = CircleArea(radius);
+                                Console.WriteLine($"Circle Area: {result}");
+                                PauseAndClear();
+                            }
+                            break;
+
+                        case 3:
+                            {
+                                double triangleBase = ReadDouble("Enter Triangle Base: ");
+                                double height = ReadDouble("Enter Height: ");
+
+                                double result = TriangleArea(triangleBase, height);
+                                Console.WriteLine($"Triangle Area: {result}");
+                                PauseAndClear();
+                            }
+                            break;
+
+                        case 4:
+                            Console.WriteLine("Goodbye!");
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid Input! Try again!");
+                            PauseAndClear();
+                            break;
+                    }
+
+                    if (choice == 4)
+                        break;
                 }
             }
         }
