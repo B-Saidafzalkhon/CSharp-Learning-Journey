@@ -66,12 +66,6 @@ understand them.
 - 🇬🇧 English — B2 
 - 🇩🇪 German — Actively learning (target: B2 for Ausbildung)
 
-## 📝 Notes language
-
-Notes in early phases are written in Russian (my fluent language) to
-maximize comprehension. The plan is to gradually shift to English
-starting around Phase 2, as my technical English matures.
-
 ---
 
-*Started: 26 May 2026 · Last updated: 1 June 2026 9:00 p.m*
+*Started: 26 May 2026 · Last updated: 3 June 2026 9:00 p.m*

@@ -1,38 +1,43 @@
 # Algorithmic Thinking
 
-## Главная идея в одном предложении
-Развитие алгоритмического понимания, для того чтобы понимать, какие конкретно шаги нужно выполнить чтобы получить определённый результат.
+## Main Idea in One Sentence
 
-## Что я узнал
-1) Алгоритм - последовательность конкретных шагов для получения определённого результата. Свойства алгоритмов:
-- Конечность. Алгоритм имеет конечное число шагов.
-- Определённость. На каждом шаге понятно, что делать.
-- Входные данные. Что у нас есть с самого начала, с чем нам предстоит работать.
-- Выходные данные. Что мы получим в итоге.
-- Эффективность и оптимальность. Алгоритм должен быть достаточно прост, и за минимальное количество действий давать максимальный результат.
-  
-2) Псевдокод. Простое описание шагов, понятным для человека языком. Главное, чтобы было понятно. Нужно для того чтобы сначала уметь исправлять ошибку в "голове" а потом в коде, что поможет оперативно решать задачи.
+Developing algorithmic understanding in order to understand what specific steps need to be performed to get a certain result.
 
-3) Декомпозиция. Процесс, в котором мы "разбиваем" одну большую задачу на несколько маленьких, чтобы было более понятнее что конкретно делать. Такой принцип применим не только в коде, но и в реальной жизни.
+## What I Learned
 
-4) Сложность алгоритмов:
-- O(1) - Постоянное время. Пример найти элемент по индексу. 
-- O(n) - Линейное. Если 10 элементов, то и шагов тоже 10.
-- O(n^2) — квадратичное. Время растёт как квадрат от размера входа. 10 элементов - 100 шагов, 100 элементов - 10 000 шагов, 1000 → миллион. Чаще всего возникает там, где два вложенных цикла проходят по одному и тому же списку.
+1. An algorithm is a sequence of specific steps for getting a certain result. Properties of algorithms:
 
+* Finiteness. An algorithm has a finite number of steps.
+* Definiteness. At each step, it is clear what to do.
+* Input data. What we have from the very beginning, what we will work with.
+* Output data. What we will get in the end.
+* Efficiency and optimality. An algorithm should be simple enough, and with a minimum number of actions, give the maximum result.
 
-## "Ага-моменты"
-1) Алгоритмы и так используются всеми и так, подсознательно и неосознанно. Так что такое мышление несложно развить.
-2) Псевдокод. Очень эффективный метод для решения задачи, или проблемы. Буквально, сначала объясни себе как решить это, а потом напиши на языке "компьютера".
-3) Декомпозиция. Это также то, что используется подсознательно, но в отличие от алгоритмов, этот навык на мой взгляд сложнее и его надо развивать. И также аналогия с реальной жизнью появилась: "Если цель кажется слишком сложной и непосильной то можно разбить её на маленькие подцели, и тогда будет понятнее с чего начать"
-4) Сложность алгоритмов. Чисто для понимания того, в какие моменты лучше оптимизировать если это возможно, чтобы не выполнять лишнее число шагов.
+2. Pseudocode. A simple description of steps in a language understandable for humans. The main thing is that it should be clear. It is needed so that first you can learn to fix an error in your "head", and then in the code, which helps to solve tasks more efficiently.
 
+3. Decomposition. A process where we "break down" one big task into several small ones, so it becomes clearer what exactly needs to be done. This principle can be applied not only in code, but also in real life.
 
-## Что я ещё не до конца понимаю
-Оптимизация алгоритмов (Big O). То, как конкретно это делать, и в виде псевдокода и кода. Тема на мой взгляд очень важная, поэтому хочу к ней вернуться.
+4. Algorithm complexity:
 
-## Полезное на будущее
-1. Написание логичных алгоритмов. 
-2. Декомпозиция сложных задач. 
-3. Составление "псевдокода" в голове. 
-4. Принципы сложности алгоритмов.
+* O(1) - Constant time. Example: finding an element by index.
+* O(n) - Linear time. If there are 10 elements, then there are also 10 steps.
+* O(n^2) — Quadratic time. The time grows as the square of the input size. 10 elements - 100 steps, 100 elements - 10,000 steps, 1000 → one million. Most often, it appears where two nested loops go through the same list.
+
+## "Aha Moments"
+
+1. Algorithms are already used by everyone anyway, subconsciously and unconsciously. So this type of thinking is not difficult to develop.
+2. Pseudocode. A very effective method for solving a task or a problem. Literally, first explain to yourself how to solve it, and then write it in the "computer's" language.
+3. Decomposition. This is also something that is used subconsciously, but unlike algorithms, in my opinion, this skill is more difficult and needs to be developed. Also, an analogy with real life appeared: "If a goal seems too difficult and impossible, you can break it down into small subgoals, and then it will be clearer where to start."
+4. Algorithm complexity. Mainly for understanding at what moments it is better to optimize something if possible, so that you do not perform an unnecessary number of steps.
+
+## What I Still Do Not Fully Understand
+
+Algorithm optimization (Big O). How exactly to do it, both in pseudocode and in code. In my opinion, this topic is very important, so I want to return to it.
+
+## Useful for the Future
+
+1. Writing logical algorithms.
+2. Decomposition of complex tasks.
+3. Creating "pseudocode" in my head.
+4. Principles of algorithm complexity.
