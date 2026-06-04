@@ -159,6 +159,32 @@ namespace _08_collections
                 }
                 Console.WriteLine($"Unique words: {string.Join(", ", result)}");
                 Console.WriteLine($"Count: {result.Count}");
+
+                Message("");
+            }
+
+            // Exercise 3
+            {
+                Console.WriteLine("====== Character frequency counter ======");
+                string word = ReadString("Enter a word: ").ToLower();
+
+                Dictionary<char, int> valuePairs = new();
+                foreach (char c in word)
+                {
+                    if (valuePairs.ContainsKey(c))
+                    {
+                        valuePairs[c]++;
+                    }
+                    else
+                    {
+                        valuePairs[c] = 1;
+                    }
+                }
+
+                foreach (char letter in valuePairs.Keys.OrderBy(k => k))
+                {
+                    Console.WriteLine($"{letter}: {valuePairs[letter]}");
+                }
             }
         }
     }
