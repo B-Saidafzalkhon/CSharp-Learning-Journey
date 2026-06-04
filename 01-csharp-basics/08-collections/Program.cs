@@ -1,4 +1,6 @@
-﻿namespace _08_collections
+﻿using System.Transactions;
+
+namespace _08_collections
 {
     internal class Program
     {
@@ -141,7 +143,23 @@
                     }
                 }
                 Message("");
-            }       
+            }
+
+            // Exercise 2
+            {
+                Console.WriteLine("====== Unique words ======");
+
+                HashSet<string> result = new();
+                string sentence = ReadString("Enter a sentence: ").ToLower();
+                string[] words = sentence.Split(' ');
+
+               foreach (string word in words)
+                {
+                    result.Add(word);
+                }
+                Console.WriteLine($"Unique words: {string.Join(", ", result)}");
+                Console.WriteLine($"Count: {result.Count}");
+            }
         }
     }
 }
