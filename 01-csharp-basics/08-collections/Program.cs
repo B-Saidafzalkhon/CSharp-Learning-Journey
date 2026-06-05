@@ -1,6 +1,4 @@
-﻿using System.Transactions;
-
-namespace _08_collections
+﻿namespace _08_collections
 {
     internal class Program
     {
@@ -69,12 +67,24 @@ namespace _08_collections
             Console.Clear();
         }
 
-        static void Add(Dictionary<string, string> book)
+        static bool Add(Dictionary<string, string> book)
         {
             string name = ReadString("Enter a name: ");
-            string telNumber = ReadString("Enter telefon number: ");
 
+            if (book.ContainsKey(name))
+            {
+                string confirmation = ReadString("Contact already exists. Overwrite? (y/n): ");
+
+                if (confirmation.Trim().ToLower() != "y")
+                {
+                    return false;
+                }
+            }
+
+            string telNumber = ReadString("Enter phone number: ");
             book[name] = telNumber;
+
+            return true;
         }
 
         static bool Remove(Dictionary<string, string> book)
@@ -240,6 +250,7 @@ namespace _08_collections
                 {
                     Console.WriteLine($"{letter}: {valuePairs[letter]}");
                 }
+                Pause();
             }
 
             // Exercise 4
@@ -262,8 +273,16 @@ namespace _08_collections
                         case 1:
                             Console.Clear();
                             Console.WriteLine("====== Add contact ======");
-                            Add(names);
-                            Message("Operation completed!");
+
+                            bool isAdded = Add(names);
+                            if (isAdded)
+                            {
+                                Message("Operation completed!");
+                            }
+                            else
+                            {
+                                Message("Cancelled.");
+                            }
                             break;
 
                         case 2:
