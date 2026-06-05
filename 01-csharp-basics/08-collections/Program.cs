@@ -51,7 +51,62 @@ namespace _08_collections
             Console.ReadKey();
             Console.Clear();
         }
-        
+
+        // ------------------------ Exercise 4 Methods ------------------------
+        static void ShowMenu()
+        {
+            Console.WriteLine("1. Add\n" +
+                "2. Find\n" +
+                "3. Remove\n" +
+                "4. Show all\n" +
+                "5. Exit");
+        }
+
+        static void Pause()
+        {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+
+        static void Add(Dictionary<string, string> book)
+        {
+            string name = ReadString("Enter a name: ");
+            string telNumber = ReadString("Enter telefon number: ");
+
+            book[name] = telNumber;
+        }
+
+        static bool Remove(Dictionary<string, string> book)
+        {
+            string name = ReadString("Remove contact: ");
+
+            return book.Remove(name);
+        }
+
+        static string? Find(Dictionary<string, string> book, string name)
+        {
+            if (book.TryGetValue(name, out string? phone))
+            {
+                return phone;
+            }
+
+            return null;
+        }
+
+        static void ShowAll(Dictionary<string, string> book)
+        {
+            if (book.Count == 0)
+            {
+                Console.WriteLine("Contact book is empty!");
+                return;
+            }
+
+            foreach (KeyValuePair<string, string> contact in book)
+            {
+                Console.WriteLine($"{contact.Key}: {contact.Value}");
+            }
+        }
         static void Main(string[] args)
         {
             // Exercise 1
@@ -184,6 +239,80 @@ namespace _08_collections
                 foreach (char letter in valuePairs.Keys.OrderBy(k => k))
                 {
                     Console.WriteLine($"{letter}: {valuePairs[letter]}");
+                }
+            }
+
+            // Exercise 4
+            {
+                Dictionary<string, string> names = new();
+
+                while (true)
+                {
+                    ShowMenu();
+                    int choice = ReadInt("Enter a choice: ");
+
+                    if (choice == 5)
+                    {
+                        Console.WriteLine("Goodbye");
+                        break;
+                    }
+
+                    switch (choice)
+                    {
+                        case 1:
+                            Console.Clear();
+                            Console.WriteLine("====== Add contact ======");
+                            Add(names);
+                            Message("Operation completed!");
+                            break;
+
+                        case 2:
+                            Console.Clear();
+                            Console.WriteLine("====== Find contact ======");
+
+                            string name = ReadString("Enter a name: ");
+                            string? phone = Find(names, name);
+
+                            if (phone != null)
+                            {
+                                Console.WriteLine($"{name}: {phone}");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Contact not found!");
+                            }
+
+                            Pause();
+                            break;
+
+                        case 3:
+                            Console.Clear();
+                            Console.WriteLine("====== Remove contact ======");
+
+                            bool isRemoved = Remove(names);
+
+                            if (isRemoved)
+                            {
+                                Message("Contact removed!");
+                            }
+                            else
+                            {
+                                Message("Contact not found!");
+                            }
+
+                            break;
+
+                        case 4:
+                            Console.Clear();
+                            Console.WriteLine("====== Contact list ======");
+                            ShowAll(names);
+                            Pause();
+                            break;
+
+                        default:
+                            Message("Invalid input!");
+                            break;
+                    }
                 }
             }
         }
