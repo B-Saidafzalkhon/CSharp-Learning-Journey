@@ -1,7 +1,7 @@
 # C# / ASP.NET Learning Journey
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
 ![Phase](https://img.shields.io/badge/Current_Phase-1_C%23_Fundamentals-blue)
-![Language](https://img.shields.io/badge/Language-Russian_%E2%86%92_English-green)
+![Language](https://img.shields.io/badge/Language_English-green)
 
 My structured path from absolute beginner to backend developer.
 Goal: Ausbildung as Backend/Fullstack developer in Germany, 2027.
@@ -25,7 +25,7 @@ understand them.
   - [x] Conditions and branching
   - [x] Loops
   - [x] Methods
-  - [ ] Arrays and collections
+  - [x] Arrays and collections
   - [ ] Exception handling
 - [ ] Phase 2 — Object-Oriented Programming
 - [ ] Phase 3 — Advanced C#
@@ -56,7 +56,7 @@ understand them.
 ├── 10-architecture/         ← Clean architecture, patterns
 ├── 11-testing/              ← xUnit, integration tests
 ├── 12-devops-azure/         ← Docker, CI/CD, Azure
-└── projects/                ← Hands-on projects
+└── practice-logic/          ← Additional algorithmic exercises
 ````
 
 ## 🗣️ Languages
@@ -68,4 +68,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 3 June 2026 9:00 p.m*
+*Started: 26 May 2026 · Last updated: 6 June 2026 0:40 a.m*
