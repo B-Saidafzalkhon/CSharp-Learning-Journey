@@ -26,6 +26,7 @@ understand them.
   - [x] Loops
   - [x] Methods
   - [x] Arrays and collections
+  - [ ] String and Stringbuilder
   - [ ] Exception handling
 - [ ] Phase 2 — Object-Oriented Programming
 - [ ] Phase 3 — Advanced C#
