@@ -88,6 +88,19 @@ namespace _09_strings
                 Console.WriteLine(sb.ToString());
                 Pause();
             }
+
+            // Exercise 3
+            {
+                Console.WriteLine("====== Reverse the string ======");
+                string word = ReadString("Enter a word: ");
+                
+                StringBuilder sb = new StringBuilder();
+                for (int i = word.Length - 1; i >= 0; i--)
+                {
+                    sb.Append(word[i]);
+                }
+                Console.WriteLine($"Reversed: {sb}");
+            }
         }
     }
 }
