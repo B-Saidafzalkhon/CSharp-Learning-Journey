@@ -1,6 +1,6 @@
 # C# / ASP.NET Learning Journey
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
-![Phase](https://img.shields.io/badge/Current_Phase-1_C%23_Fundamentals-blue)
+![Phase](https://img.shields.io/badge/Current_Phase-2_Object_Oriented_Programming-blue)
 ![Language](https://img.shields.io/badge/Language_English-green)
 
 My structured path from absolute beginner to backend developer.
@@ -19,7 +19,7 @@ understand them.
   - [x] How computers work
   - [x] Algorithmic thinking
   - [x] PowerShell basics
-- [ ] Phase 1 — C# fundamentals
+- [x] Phase 1 — C# fundamentals
   - [x] First program & syntax breakdown
   - [x] Variables and data types
   - [x] Conditions and branching
@@ -27,7 +27,7 @@ understand them.
   - [x] Methods
   - [x] Arrays and collections
   - [x] String and Stringbuilder
-  - [ ] Exception handling
+  - [x] Exception handling (try/catch)
 - [ ] Phase 2 — Object-Oriented Programming
 - [ ] Phase 3 — Advanced C#
 - [ ] Phase 4 — Tools (Git, debugging, testing)
@@ -69,4 +69,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 7 June 2026 0:40 a.m*
+*Started: 26 May 2026 · Last updated: 8 June 2026 11:40 p.m*
