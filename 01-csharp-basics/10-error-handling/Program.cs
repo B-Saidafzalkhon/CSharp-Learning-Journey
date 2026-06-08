@@ -2,8 +2,34 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Pause()
         {
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+        static double Divide(int a, int b)
+        {
+            if(b == 0)
+                throw new DivideByZeroException("Divisor cannot be equal to zero");
+
+            return (double)a / b;
+        }
+        static int ReadInt(string message)
+        {
+            while(true)
+            {
+                Console.Write(message);
+                string? input = Console.ReadLine();
+
+                if(int.TryParse(input, out int number))
+                    return number;
+
+                Console.WriteLine("Invalid input! Try again...");
+            }
+        }
+        static void Main(string[] args)
+        {       
             // Exercise 1
             {
                 Console.WriteLine("====== Safe input reader ======");
@@ -41,7 +67,26 @@
                         Console.WriteLine(ex.Message);
                     }
                 }
+                Pause();
             }
+
+            // Exercise 2
+            {
+                Console.WriteLine("====== Calculator with exeption ======");
+
+                int a = ReadInt("Enter a: ");
+                int b = ReadInt("Enter b: ");
+                try
+                {
+                    double result = Divide(a, b);
+                    Console.WriteLine($"Result: {result:F2}");
+                }
+                catch(DivideByZeroException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                Pause();
+            }           
         }
     }
 }
