@@ -29,6 +29,13 @@ understand them.
   - [x] String and Stringbuilder
   - [x] Exception handling (try/catch)
 - [ ] Phase 2 — Object-Oriented Programming
+  - [x] OOP philosophy (state & behavior, four pillars)
+  - [x] Classes and objects (fields, constructors, access modifiers)
+  - [x] Properties (get/set, auto-properties, validation)
+  - [ ] Inheritance (base class, sealed)
+  - [ ] Polymorphism (virtual/override, abstract)
+  - [ ] Interfaces (contracts, multiple implementation)
+  - [ ] SOLID principles
 - [ ] Phase 3 — Advanced C#
 - [ ] Phase 4 — Tools (Git, debugging, testing)
 - [ ] Phase 5 — Databases & SQL
