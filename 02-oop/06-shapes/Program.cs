@@ -12,7 +12,7 @@
             public double Radius {  get; private set; }
             public Circle(double radius)
             {
-                this.Radius = radius;
+                Radius = radius;
             }
             public override double Area() => Math.PI * (Radius * Radius);
         }
@@ -22,8 +22,8 @@
             public double Height { get; private set; }
             public Rectangle(double width, double height)
             {
-                this.Width = width;
-                this.Height = height;
+                Width = width;
+                Height = height;
             }
             public override double Area() => Width * Height;
         }
@@ -35,8 +35,8 @@
 
             public Triangle(double triangleBase, double height)
             {
-                this.TriangleBase = triangleBase;
-                this.Height = height;
+                TriangleBase = triangleBase;
+                Height = height;
             }
 
             public override double Area() => 0.5 * TriangleBase * Height;

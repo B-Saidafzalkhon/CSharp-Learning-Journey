@@ -12,7 +12,7 @@
             public double Radius { get; private set; }
             public Circle(double radius)
             {
-                this.Radius = radius;
+                Radius = radius;
             }
             public override double Area() => Math.PI * (Radius * Radius);
             public double Diameter() => 2 * Radius;
@@ -28,8 +28,8 @@
             public double Height { get; private set; }
             public Rectangle(double width, double height)
             {
-                this.Width = width;
-                this.Height = height;
+                Width = width;
+                Height = height;
             }
             public override double Area() => Width * Height;
 
@@ -46,8 +46,8 @@
 
             public Triangle(double triangleBase, double height)
             {
-                this.TriangleBase = triangleBase;
-                this.Height = height;
+                TriangleBase = triangleBase;
+                Height = height;
             }
 
             public override double Area() => 0.5 * TriangleBase * Height;
@@ -73,9 +73,10 @@
                 totalArea += shape.Area();
 
                 Console.WriteLine(shape);
-                if (shape is Circle circle)
-                {
-                    double diameter = circle.Diameter();
+                if (shape is Circle circle) // The diameter is specific to a circle,
+                                            // so making it virtual in Shape makes no sense — a rectangle does not have a diameter.
+                                            // This is exactly when is is justified.
+                {               
                     Console.WriteLine($"Circle Radius: {circle.Radius:F2}");
                     Console.WriteLine($"Circle Diameter: {circle.Diameter():F2}");
                 }

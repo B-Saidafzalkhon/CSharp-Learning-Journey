@@ -1,6 +1,4 @@
-﻿using System.Threading.Channels;
-
-namespace _05_animals
+﻿namespace _05_animals
 {
     internal class Program
     {

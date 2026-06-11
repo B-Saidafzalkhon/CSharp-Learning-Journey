@@ -36,7 +36,7 @@
             public override decimal CalculateSalary()
             {
                 decimal baseSalary = base.CalculateSalary();
-                decimal bonus = baseSalary * 1.5m;
+                decimal bonus = baseSalary * 0.3m;
 
                 return baseSalary + bonus;
             }
