@@ -32,8 +32,8 @@ understand them.
   - [x] OOP philosophy (state & behavior, four pillars)
   - [x] Classes and objects (fields, constructors, access modifiers)
   - [x] Properties (get/set, auto-properties, validation)
-  - [ ] Inheritance (base class, sealed)
-  - [ ] Polymorphism (virtual/override, abstract)
+  - [x] Inheritance (base class, sealed)
+  - [x] Polymorphism (virtual/override, abstract)
   - [ ] Interfaces (contracts, multiple implementation)
   - [ ] SOLID principles
 - [ ] Phase 3 — Advanced C#
@@ -76,4 +76,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 8 June 2026 11:40 p.m*
+*Started: 26 May 2026 · Last updated: 11 June 2026 17:01 p.m*
