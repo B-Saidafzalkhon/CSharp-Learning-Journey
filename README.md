@@ -37,6 +37,13 @@ understand them.
   - [x] Interfaces (contracts, multiple implementation)
   - [x] SOLID principles
 - [ ] Phase 3 — Advanced C#
+  - [ ] Collections in depth (Queue, Stack, IEnumerable/ICollection/IList)
+  - [ ] Generics (custom generic classes/methods, constraints)
+  - [ ] Delegates, events, lambdas (Func/Action/Predicate)
+  - [ ] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
+  - [ ] Async programming (async/await, Task, common pitfalls)
+  - [ ] Files and streams (StreamReader/Writer, JSON serialization)
+  - [ ] Nullable reference types and null handling (?., ??, ??=)
 - [ ] Phase 4 — Tools (Git, debugging, testing)
 - [ ] Phase 5 — Databases & SQL
 - [ ] Phase 6 — Web fundamentals
