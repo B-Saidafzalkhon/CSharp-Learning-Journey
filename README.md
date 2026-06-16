@@ -37,7 +37,7 @@ understand them.
   - [x] Interfaces (contracts, multiple implementation)
   - [x] SOLID principles
 - [ ] Phase 3 — Advanced C#
-  - [ ] Collections in depth (Queue, Stack, IEnumerable/ICollection/IList)
+  - [x] Collections in depth (Queue, Stack, IEnumerable/ICollection/IList)
   - [ ] Generics (custom generic classes/methods, constraints)
   - [ ] Delegates, events, lambdas (Func/Action/Predicate)
   - [ ] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
