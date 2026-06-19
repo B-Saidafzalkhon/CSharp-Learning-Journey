@@ -38,7 +38,7 @@ understand them.
   - [x] SOLID principles
 - [ ] Phase 3 — Advanced C#
   - [x] Collections in depth (Queue, Stack, IEnumerable/ICollection/IList)
-  - [ ] Generics (custom generic classes/methods, constraints)
+  - [x] Generics (custom generic classes/methods, constraints)
   - [ ] Delegates, events, lambdas (Func/Action/Predicate)
   - [ ] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
   - [ ] Async programming (async/await, Task, common pitfalls)
