@@ -1,6 +1,6 @@
 # C# / ASP.NET Learning Journey
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
-![Phase](https://img.shields.io/badge/Current_Phase-2_Object_Oriented_Programming-blue)
+![Phase](https://img.shields.io/badge/Current_Phase-03_advanced_csharp-blue)
 ![Language](https://img.shields.io/badge/Language_English-green)
 
 My structured path from absolute beginner to backend developer.
@@ -83,4 +83,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 11 June 2026 17:01 p.m*
+*Started: 26 May 2026 · Last updated: 22 June 2026 8:48 a.m*
