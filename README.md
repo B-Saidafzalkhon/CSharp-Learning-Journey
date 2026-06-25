@@ -40,7 +40,7 @@ understand them.
   - [x] Collections in depth (Queue, Stack, IEnumerable/ICollection/IList)
   - [x] Generics (custom generic classes/methods, constraints)
   - [x] Delegates, events, lambdas (Func/Action/Predicate)
-  - [ ] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
+  - [x] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
   - [ ] Async programming (async/await, Task, common pitfalls)
   - [ ] Files and streams (StreamReader/Writer, JSON serialization)
   - [ ] Nullable reference types and null handling (?., ??, ??=)
@@ -83,4 +83,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 22 June 2026 8:48 a.m*
+*Started: 26 May 2026 · Last updated: 25 June 2026 11:37 p.m*
