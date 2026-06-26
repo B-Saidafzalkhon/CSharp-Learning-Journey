@@ -4,7 +4,6 @@
     {
         static async Task<string> DownloadAsync(string name, int seconds)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Started Task: {name}");
             await Task.Delay(seconds * 1000);
             return $"Task: {name} - completed.";
@@ -13,6 +12,7 @@
         {
             var sw = System.Diagnostics.Stopwatch.StartNew();
 
+            Console.ForegroundColor = ConsoleColor.Yellow;
             string a = await DownloadAsync("Task-A", 2);
             string b = await DownloadAsync("Task-B", 2);
             string c = await DownloadAsync("Task-C", 2);
@@ -29,6 +29,7 @@
             Console.ResetColor();
 
             sw.Restart();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Task<string> taskA = DownloadAsync("Task-A1", 2);
             Task<string> taskB = DownloadAsync("Task-B1", 2);
             Task<string> taskC = DownloadAsync("Task-C1", 2);
@@ -42,7 +43,7 @@
             }
 
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine($"Sequential time: {sw.Elapsed}");
+            Console.WriteLine($"Parallel time: {sw.Elapsed}");
             Console.ResetColor();
         }
         // Parallel version is faster because all tasks wait at the same time.

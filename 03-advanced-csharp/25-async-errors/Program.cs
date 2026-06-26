@@ -16,15 +16,11 @@
         static async Task<double> DivideAsync(double a, double b)
         {
             if (b == 0)
-            {
                 throw new DivideByZeroException("Cannot divide by 0!");
-            }
-            else
-            {
-                Console.WriteLine("Dividing...");
-                await Task.Delay(1000);
-                return a / b;
-            }
+
+            Console.WriteLine("Dividing...");
+            await Task.Delay(1000);
+            return a / b;
         }
         static double ReadDouble(string message)
         {
@@ -33,7 +29,7 @@
                 Console.Write(message);
                 string? input = Console.ReadLine();
 
-                if(double.TryParse(input, out double value))
+                if (double.TryParse(input, out double value))
                     return value;
 
                 Console.WriteLine("Invalid input!");
@@ -46,7 +42,7 @@
             {
                 double a = ReadDouble("Enter a: ");
                 double b = ReadDouble("Enter b: ");
-                double result = await DivideAsync(a, b); 
+                double result = await DivideAsync(a, b);
 
                 Console.WriteLine($"Result: {result}");
             }
