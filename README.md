@@ -41,7 +41,7 @@ understand them.
   - [x] Generics (custom generic classes/methods, constraints)
   - [x] Delegates, events, lambdas (Func/Action/Predicate)
   - [x] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
-  - [ ] Async programming (async/await, Task, common pitfalls)
+  - [x] Async programming (async/await, Task, common pitfalls)
   - [ ] Files and streams (StreamReader/Writer, JSON serialization)
   - [ ] Nullable reference types and null handling (?., ??, ??=)
 - [ ] Phase 4 — Tools (Git, debugging, testing)
@@ -83,4 +83,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 25 June 2026 11:37 p.m*
+*Started: 26 May 2026 · Last updated: 26 June 2026 6:38 p.m*
