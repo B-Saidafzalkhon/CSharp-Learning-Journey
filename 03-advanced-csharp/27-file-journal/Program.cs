@@ -28,7 +28,7 @@
                 Console.WriteLine("Invalid input! Try again!");
             }
         }
-        static void FileExists(string path)
+        static void EnsureFileExists(string path)
         {
             if(!File.Exists(path))
                 throw new FileNotFoundException("File not exists!");
@@ -78,7 +78,7 @@
                         Console.WriteLine("=== Showing All Text ===");
                         try
                         {
-                            FileExists(filePath);
+                            EnsureFileExists(filePath);
                             string readText = File.ReadAllText(filePath);
 
                             Console.WriteLine("Readed text: \n" + readText);

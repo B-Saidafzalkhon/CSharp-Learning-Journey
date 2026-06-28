@@ -41,7 +41,7 @@ namespace _29_json_storage
                 Console.WriteLine("Invalid input! Cannot be empty!");
             }
         }
-        static void FileExists(string path)
+        static void EnsureFileExists(string path)
         {
             if (!File.Exists(path))
                 throw new FileNotFoundException("File not found!", nameof(path));
@@ -73,7 +73,7 @@ namespace _29_json_storage
             List<Contact>? contacts = new List<Contact>();
             try
             {
-                FileExists(filePath);
+                EnsureFileExists(filePath);
                 string loaded = File.ReadAllText(filePath);
                 contacts = JsonSerializer.Deserialize<List<Contact>>(loaded);
 
