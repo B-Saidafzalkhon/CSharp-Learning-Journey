@@ -42,7 +42,7 @@ understand them.
   - [x] Delegates, events, lambdas (Func/Action/Predicate)
   - [x] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
   - [x] Async programming (async/await, Task, common pitfalls)
-  - [ ] Files and streams (StreamReader/Writer, JSON serialization)
+  - [x] Files and streams (StreamReader/Writer, JSON serialization)
   - [ ] Nullable reference types and null handling (?., ??, ??=)
 - [ ] Phase 4 — Tools (Git, debugging, testing)
 - [ ] Phase 5 — Databases & SQL
@@ -83,4 +83,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 26 June 2026 6:38 p.m*
+*Started: 26 May 2026 · Last updated: 28 June 2026 11:04 p.m*
