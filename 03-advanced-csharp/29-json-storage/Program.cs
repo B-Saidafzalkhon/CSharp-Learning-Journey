@@ -76,6 +76,7 @@ namespace _29_json_storage
                 EnsureFileExists(filePath);
                 string loaded = File.ReadAllText(filePath);
                 contacts = JsonSerializer.Deserialize<List<Contact>>(loaded);
+                contacts ??= new List<Contact>();
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Contacts are loaded.");
