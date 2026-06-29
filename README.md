@@ -45,7 +45,15 @@ understand them.
   - [x] Files and streams (StreamReader/Writer, JSON serialization)
   - [x] Nullable reference types and null handling (?., ??, ??=)
 - [ ] Phase 4 — Tools (Git, debugging, testing)
+  - [x] Git and GitHub (init, add, commit, push, branch, merge, PRs)
+  - [ ] Debugging (breakpoints, step over/into/out, watch, conditional breakpoints)
+  - [ ] Unit testing intro (xUnit, Arrange-Act-Assert, parameterized tests, coverage)
+  - [ ] NuGet (installing packages via IDE and CLI, version management)
 - [ ] Phase 5 — Databases & SQL
+  - [ ] Relational DB theory (tables, primary/foreign keys, relationships, normalization)
+  - [ ] SQL basics (SELECT/WHERE/ORDER BY, INSERT/UPDATE/DELETE, JOIN, GROUP BY)
+  - [ ] SQL advanced minimum (indexes, transactions/ACID, views)
+  - [ ] PostgreSQL or SQL Server (local setup, tooling, build a real DB)
 - [ ] Phase 6 — Web fundamentals
 - [ ] Phase 7 — ASP.NET Core
 - [ ] Phase 8 — Entity Framework Core
