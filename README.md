@@ -1,6 +1,6 @@
 # C# / ASP.NET Learning Journey
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
-![Phase](https://img.shields.io/badge/Current_Phase-03_advanced_csharp-blue)
+![Phase](https://img.shields.io/badge/Current_Phase-Portfolio_Project-blue)
 ![Language](https://img.shields.io/badge/Language_English-green)
 
 My structured path from absolute beginner to backend developer.
@@ -36,14 +36,14 @@ understand them.
   - [x] Polymorphism (virtual/override, abstract)
   - [x] Interfaces (contracts, multiple implementation)
   - [x] SOLID principles
-- [ ] Phase 3 — Advanced C#
+- [x] Phase 3 — Advanced C#
   - [x] Collections in depth (Queue, Stack, IEnumerable/ICollection/IList)
   - [x] Generics (custom generic classes/methods, constraints)
   - [x] Delegates, events, lambdas (Func/Action/Predicate)
   - [x] LINQ (Where, Select, OrderBy, GroupBy, deferred execution)
   - [x] Async programming (async/await, Task, common pitfalls)
   - [x] Files and streams (StreamReader/Writer, JSON serialization)
-  - [ ] Nullable reference types and null handling (?., ??, ??=)
+  - [x] Nullable reference types and null handling (?., ??, ??=)
 - [ ] Phase 4 — Tools (Git, debugging, testing)
 - [ ] Phase 5 — Databases & SQL
 - [ ] Phase 6 — Web fundamentals
@@ -83,4 +83,4 @@ understand them.
 
 ---
 
-*Started: 26 May 2026 · Last updated: 28 June 2026 11:04 p.m*
+*Started: 26 May 2026 · Last updated: 29 June 2026 5:19 p.m*
