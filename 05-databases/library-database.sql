@@ -50,3 +50,44 @@ VALUES
     (2,1, CURRENT_TIMESTAMP),
     (3,1,CURRENT_TIMESTAMP),
     (5,2,CURRENT_TIMESTAMP);
+
+
+-- === DataBase Queries === --
+
+-- All books
+SELECT * FROM books;
+
+-- Book titles and authors
+SELECT title, author FROM books;
+
+-- Programming books
+SELECT * FROM books 
+WHERE genre = 'Programming';
+
+-- Available books
+SELECT * FROM books 
+WHERE is_available = TRUE;
+
+-- Active loans
+SELECT * FROM loans 
+WHERE return_date IS NULL;
+
+-- Books sorted by title
+SELECT * FROM books 
+ORDER BY title;
+
+-- Books by authors named Martin
+SELECT * FROM books 
+WHERE author LIKE '%Martin%';
+
+-- First 3 books by title
+SELECT * FROM books 
+ORDER BY title 
+LIMIT 3;
+
+-- First 2 available programming books
+SELECT * FROM books 
+WHERE genre = 'Programming' 
+  AND is_available = TRUE
+ORDER BY title
+LIMIT 2;
