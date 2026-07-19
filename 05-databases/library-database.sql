@@ -91,3 +91,26 @@ WHERE genre = 'Programming'
   AND is_available = TRUE
 ORDER BY title
 LIMIT 2;
+
+
+-- Marks book 3 as unavailable
+UPDATE books 
+SET is_available = FALSE
+WHERE id = 3;
+
+-- Returns loan 1 today
+UPDATE loans 
+SET return_date = CURDATE()
+WHERE id = 1;
+
+-- Shows loan 4
+SELECT * FROM loans 
+WHERE id = 4;
+
+-- Deletes loan 4
+DELETE FROM loans 
+WHERE id = 4;
+
+-- Intentional error: book 2 is referenced by a loan
+DELETE FROM books 
+WHERE id = 2;
