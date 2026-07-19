@@ -114,3 +114,30 @@ WHERE id = 4;
 -- Intentional error: book 2 is referenced by a loan
 DELETE FROM books 
 WHERE id = 2;
+
+
+-- Loans with book titles
+SELECT l.id, books.title, l.loan_date
+FROM loans l
+INNER JOIN books ON l.book_id = books.id;
+
+-- Loans with member names
+SELECT l.id, members.name
+FROM loans l
+INNER JOIN members ON l.member_id = members.id;
+
+-- Books and their borrowers
+SELECT books.title, members.name
+FROM loans l
+INNER JOIN books ON l.book_id = books.id
+INNER JOIN members ON l.member_id = members.id;
+
+-- All books with loan IDs
+SELECT b.title, l.id
+FROM books b
+LEFT JOIN loans l ON b.id = l.book_id;
+
+-- Only loaned books
+SELECT b.title, l.id
+FROM books b
+INNER JOIN loans l ON b.id = l.book_id;
