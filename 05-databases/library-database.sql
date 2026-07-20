@@ -141,3 +141,51 @@ LEFT JOIN loans l ON b.id = l.book_id;
 SELECT b.title, l.id
 FROM books b
 INNER JOIN loans l ON b.id = l.book_id;
+
+-- Total number of books
+SELECT COUNT(*) FROM books;
+
+-- Number of books by genre
+SELECT genre, COUNT(*) 
+FROM books
+GROUP BY genre;
+
+-- Number of loans by member ID
+SELECT l.member_id, COUNT(*)
+FROM loans l
+GROUP BY l.member_id;
+
+-- Number of loans by member name
+SELECT m.name, COUNT(l.id)
+FROM loans l
+INNER JOIN members m ON l.member_id = m.id
+GROUP BY m.name;
+
+-- Active loans by member
+SELECT m.name, COUNT(*) 
+FROM loans l
+INNER JOIN members m ON l.member_id = m.id
+WHERE l.return_date IS NULL
+GROUP BY m.name, m.id;
+
+-- Members with 2 or more loans
+SELECT m.name, COUNT(*)
+FROM loans l
+INNER JOIN members m ON l.member_id = m.id
+GROUP BY m.name, m.id
+HAVING COUNT(*) >= 2;
+
+-- Top 3 most loaned book IDs
+SELECT l.book_id, COUNT(*) AS loan_count
+FROM loans l
+GROUP BY l.book_id
+ORDER BY loan_count DESC
+LIMIT 3;
+
+-- Top 3 most loaned books
+SELECT b.title, COUNT(*) AS loan_count
+FROM loans l
+INNER JOIN books b ON l.book_id = b.id
+GROUP BY l.book_id
+ORDER BY loan_count DESC
+LIMIT 3;
