@@ -49,9 +49,9 @@ understand them.
   - [x] Debugging (breakpoints, step over/into/out, watch, conditional breakpoints)
   - [x] Unit testing intro (xUnit, Arrange-Act-Assert, parameterized tests, coverage)
   - [x] NuGet (installing packages via IDE and CLI, version management)
-- [ ] Phase 5 — Databases & SQL
-  - [ ] Relational DB theory (tables, primary/foreign keys, relationships, normalization)
-  - [ ] SQL basics (SELECT/WHERE/ORDER BY, INSERT/UPDATE/DELETE, JOIN, GROUP BY)
+- [x] Phase 5 — Databases & SQL
+  - [x] Relational DB theory (tables, primary/foreign keys, relationships, normalization)
+  - [x] SQL basics (SELECT/WHERE/ORDER BY, INSERT/UPDATE/DELETE, JOIN, GROUP BY)
   - [ ] SQL advanced minimum (indexes, transactions/ACID, views)
   - [ ] PostgreSQL or SQL Server (local setup, tooling, build a real DB)
 - [ ] Phase 6 — Web fundamentals
