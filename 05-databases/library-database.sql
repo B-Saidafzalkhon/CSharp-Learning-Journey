@@ -189,3 +189,27 @@ INNER JOIN books b ON l.book_id = b.id
 GROUP BY l.book_id
 ORDER BY loan_count DESC
 LIMIT 3;
+
+-- Loans for unavailable books
+SELECT * FROM loans l
+WHERE l.book_id IN (
+    SELECT b.id 
+    FROM books b 
+    WHERE b.is_available = FALSE
+);
+
+-- Loans for SciFi books
+SELECT * FROM loans l
+WHERE l.book_id IN (
+    SELECT b.id 
+    FROM books b 
+    WHERE b.genre = 'SciFi'
+);
+
+-- Intentional error: table "b" does not exist
+SELECT b.title 
+FROM books b
+WHERE b.id > (
+    SELECT AVG(b.id) 
+    FROM books
+);
