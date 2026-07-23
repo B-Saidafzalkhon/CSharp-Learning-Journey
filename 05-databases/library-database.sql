@@ -213,3 +213,12 @@ WHERE b.id > (
     SELECT AVG(b.id) 
     FROM books
 );
+
+-- Members with active loans
+SELECT m.name
+FROM members m
+WHERE m.id IN (
+    SELECT l.member_id
+    FROM loans l
+    WHERE l.return_date IS NULL
+);
